@@ -1,0 +1,9 @@
+<h1>Edit Post</h1>
+<head><title>new post</title>
+    
+    <link rel="stylesheet" href="/css/styles.css"></head>
+<form action="/posts/<%= post._id %>?_method=PUT" method="POST">
+  <input type="text" name="post[title]" value="<%= post.title %>">
+  <textarea name="post[content]"><%= post.content %></textarea>
+  <button type="submit">Update</button>
+</form>

@@ -1,0 +1,8 @@
+<h1><%= post.title %></h1>
+<p><%= post.content %></p>
+<a href="/posts/<%= post._id %>/edit">Edit</a>
+<head> <title>new post</title>
+    <link rel="stylesheet" href="/css/styles.css"></head>
+<form action="/posts/<%= post._id %>?_method=DELETE" method="POST">
+  <button type="submit">Delete</button>
+</form>
